@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class - DSA</title>
+</head>
+<body>
+    
+    <script>
+        class Student {
+            // Data (Properties)
+            // Name
+            // Age
+            // Standard
+
+            constructor(name, age, username){
+                this.Name = name;
+                this.Age = age;
+                this.Username = username;
+            }
+
+            // Methods (Action)
+            study(){
+                //study
+                console.log(`${this.Name} is studing.`);
+            }
+            Play(){
+                //Play
+                console.log(`${this.Name} is playing table tennis.`);
+            }
+            doHomeWork(){
+                //Do Home Work
+                console.log(`${this.Name} is do homework.`);
+            }
+        }
+
+        const student = new Student('Ryan Jake', 20, 'rhyndz7');
+        const student1 = new Student('RJ', 21, 'daz7');
+
+        student.study();
+        student.Play();
+        student.doHomeWork();
+
+        student1.study();
+        student1.Play();
+        student1.doHomeWork();
+
+
+        console.log(`I am ${student.Name}, ${student.Age}. My username is ${student.Username}`);
+        console.log(`I am ${student1.Name}, ${student1.Age}. My username is ${student1.Username}`);
+        
+    </script>
+</body>
+</html>
